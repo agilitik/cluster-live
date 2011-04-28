@@ -20,8 +20,17 @@
        .use(live())
        .listen(3000);
 
- Optionally a `port`, `host` and TLS `options` options may be used to customize and secure the cluster-live server. To run in production set `NODE_ENV=production`, and add a `user` / `pass` for the basicAuth middleware.
- 
+## Options
+
+  Pass an object such as `live({ port: 8889 })`, with one or more of the following options:
+  
+    - `port`  defaults to `8888`
+    - `host`  hostname
+    - `user`  basicAuth username
+    - `pass`  basicAuth password
+
+ When running in production you should use `NODE_ENV=production`, after which the user/pass are required.
+
 ## Examples
 
  First start the example application and cluster-live:
