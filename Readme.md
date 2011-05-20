@@ -22,14 +22,16 @@
 
 ## Options
 
-  Pass an object such as `live({ port: 8889 })`, with one or more of the following options:
+  Pass a portno such as `live(9999)`, or optional host `live(9999, 'localhost')`, or both with options `live(9999, 'localhost', { user: 'tj', pass: 'foobar' })`.
   
     - `port`  defaults to `8888`
     - `host`  hostname
     - `user`  basicAuth username
     - `pass`  basicAuth password
 
- When running in production you should use `NODE_ENV=production`, after which the user/pass are required.
+ When running in production you should use `NODE_ENV=production`, after which the user/pass are required. These options may also be passed as the first or second argument when the port or host are to be ignored:
+ 
+     live({ user: 'tj', pass: 'tobi' })
 
 ## Examples
 
