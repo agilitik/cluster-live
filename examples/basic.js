@@ -21,6 +21,6 @@ cluster(server)
   .use(cluster.debug())
   .use(cluster.repl(9999))
   .use(cluster.stats({ connections: true, lightRequests: true }))
-  .use(live())
+  .use(live(3001))
   .listen(3000);
 
