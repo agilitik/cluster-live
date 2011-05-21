@@ -22,7 +22,7 @@
 
 ## Options
 
-  Pass a portno such as `live(9999)`, or optional host `live(9999, 'localhost')`, or both with options `live(9999, 'localhost', { user: 'tj', pass: 'foobar' })`.
+  Pass a portno such as `live(9999)`, or optional host `live(9999, 'localhost')`, or both with options `live(9999, 'localhost', { user: 'tj', pass: 'foobar' })`, or pass port / host as options as well `live({ port: 3001 })`.
   
     - `port`  defaults to `8888`
     - `host`  hostname
